@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orbit Works | Modular Space Infrastructure</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vzorkin2010-tech/nexagrid@main/styles.css">
+  </head>
+  <body class="space-site orbit-works">
+    <header class="topbar">
+      <a class="brand" href="./">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12c4-6 10-6 14 0-4 6-10 6-14 0Z" stroke="currentColor" stroke-width="2"/><path d="M12 9v6M9 12h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </span>
+        Orbit Works
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#platform">Platform</a>
+        <a href="#modules">Modules</a>
+        <a class="primary-link" href="#platform">Inspect station</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="space-hero" aria-label="Interactive orbital station model">
+        <canvas class="space-canvas" data-space-scene="orbit" aria-label="Draggable 3D orbital station model"></canvas>
+        <div class="space-content">
+          <p class="eyebrow">Modular Space Infrastructure</p>
+          <h1>An orbital station you can move with your hand.</h1>
+          <p>
+            Orbit Works is a high-energy microsite for reusable station modules, featuring
+            a draggable 3D station, orbit geometry, and an operations-focused content system.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#platform">Inspect platform</a>
+            <a class="button secondary" href="#modules">See modules</a>
+          </div>
+          <span class="model-hint">Drag the station to rotate the 3D model</span>
+        </div>
+        <aside class="space-panel">
+          <strong>Interactive station model</strong>
+          <span>Built from Three.js geometry: station core, ring, solar panels, lunar body, animated light, and orbit paths.</span>
+        </aside>
+      </section>
+
+      <section class="space-section" id="platform">
+        <div class="section-inner space-grid">
+          <div>
+            <p class="section-kicker">Platform story</p>
+            <h2>Landing page energy for a serious aerospace product.</h2>
+            <p>
+              This concept combines spectacle with credible interface thinking: the top screen
+              captures attention, while the sections below describe modular services, operations
+              states, and infrastructure value without generic sci-fi filler.
+            </p>
+            <div class="orbit-stats">
+              <div><b>12</b><span>station module slots</span></div>
+              <div><b>4</b><span>operational modes</span></div>
+              <div><b>0</b><span>image dependencies for the 3D model</span></div>
+            </div>
+          </div>
+          <div class="space-terminal">
+            <code>station.module.attach("solar-array")
+station.ring.spin(0.006)
+station.camera.fit("mobile-safe")
+
+controls.drag = "inertia";
+render.scene = "full-bleed";</code>
+          </div>
+        </div>
+      </section>
+
+      <section class="section band" id="modules">
+        <div class="section-inner">
+          <p class="section-kicker">Module system</p>
+          <h2>Every content block supports the 3D promise.</h2>
+          <div class="grid">
+            <article class="card"><span class="card-number">01</span><h3>Assembly</h3><p>Clear component storytelling for core, ring, solar, payload, and service modules.</p></article>
+            <article class="card"><span class="card-number">02</span><h3>Operations</h3><p>Mission states, maintenance windows, and infrastructure uptime made visible.</p></article>
+            <article class="card"><span class="card-number">03</span><h3>Interaction</h3><p>Pointer-driven model rotation turns the hero into a product demo, not a background.</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"><div class="footer-inner"><span>Orbit Works</span><span>Modular space infrastructure</span></div></footer>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/vzorkin2010-tech/nexagrid@main/space-scenes.js"></script>
+  </body>
+</html>
+
+
